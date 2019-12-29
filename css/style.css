@@ -1,0 +1,532 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif|Open+Sans:300,400,600,700,800|Ubuntu:300,400,500,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Baloo|Russo+One&display=swap');
+/*
+font-family: 'Ubuntu', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Bree Serif', serif;
+font-family: 'Source Sans Pro', sans-serif;
+
+font-family: 'Baloo', cursive;
+*/
+*{
+
+}
+body{
+	font-family: 'Ubuntu', sans-serif;
+	scroll-behavior: smooth;
+}
+h2{
+	font-family: 'Baloo', cursive;
+}
+.navbar-section{
+	background-image: url(../images/bg.jpg);
+	background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border: 0;
+    right: 0;
+    background-color: #212124;
+    z-index: 10;
+}
+.navbar{
+	padding: 10px 0;
+}
+.navbar-section .navbar a:hover{
+	color: #ddd;
+}
+.navbar-section .bg-light {
+    background-color: transparent !important;
+}
+.navbar-section .navbar-brand{
+	text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+}
+.navbar-section .nav-link{
+	margin: 5px 10px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #fff;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #ddd;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #a2a2a2;
+    line-height: 22px;
+}
+
+/* Hunbergur CSS */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 12;
+    top: 0px;
+    background-color: #232323;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 100px;
+    right: 0;
+    background: url(images/bg.jpg);
+    background-color: rgb(0,0,0,0.78);
+    background-blend-mode: overlay;
+}
+#mySidenav{
+	background: url(images/bg.jpg);
+    background-color: rgb(0,0,0,0.78);
+    background-blend-mode: overlay;
+}
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 22px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 190px;
+    font-size: 40px;
+    margin-left: 50px;
+}
+
+#main {
+  transition: margin-left 1s ease-in-out;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/* Banner Section */
+.banner-section{
+	background: url(../images/banner.png) no-repeat center;
+	background-size: cover;
+	background-attachment: fixed;
+	scroll-behavior: auto;
+	height: 100vh;
+	padding: 160px 0;
+	/*image overlay css*/
+	background-color: rgb(0,0,0,0.5);
+	background-blend-mode: overlay;
+}
+.banner-section .b-name h1{
+	font-family: 'Baloo', cursive;
+	display: inline;
+	color: #fff;
+	font-size: 40px;
+	text-transform: uppercase;
+	transition: 0.3s ease-in-out;
+}
+.banner-section .b-name h1:hover{
+	display: inline;
+	color: #ddd;
+}
+.banner-section .b-name a{
+	text-decoration: none;
+}
+.banner-section .typer h6{
+	font-size: 28px;
+	color: #fff;
+}
+.banner-section .typer span{
+	color: #ddd;	
+}
+.banner-section .b-details h2{
+	color: #ddd;
+	font-size: 22px;
+}
+.banner-section .b-details{
+	color: #fff;
+	font-size: 16px;
+}
+.banner-section .b-btn a{
+	text-decoration: none;
+}
+.banner-section .b-btn .btn-work{
+    color: #ddd;
+    font-size: 14px;
+    padding: 13px 22px;
+    border-radius: 50px;
+    font-weight: 500;
+    text-transform: uppercase;
+    border: 1px solid #ddd;
+	background: #616161;
+	transition: 0.3s ease-in-out;
+}
+.banner-section .b-btn .btn-work:hover{
+    border: 1px solid #ddd;
+	background: transparent;
+}
+.banner-section .b-btn .btn-hire{
+    color: #ddd;
+    font-size: 14px;
+    padding: 13px 22px;
+    border-radius: 50px;
+    font-weight: 500;
+    text-transform: uppercase;
+    border: 1px solid #ddd;
+	background: #616161;
+	transition: 0.3s ease-in-out;
+	margin: 0 2px;
+}
+.banner-section .b-btn .btn-hire:hover{
+    border: 1px solid #ddd;
+	background: transparent;
+}
+.banner-section .social-link ul{
+	list-style: none;
+    text-align: center;
+    margin-top: 20%;
+}
+.banner-section .social-link ul li{
+	display: inline;
+    margin: 0 2px;
+    font-size: 18px;
+    text-decoration: none;
+}
+.banner-section .social-link ul .fa{
+    text-decoration: none;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    background-color: #2b2a2a;
+    line-height: 40px;
+    border: none;
+    border-radius: 12px;
+    transition: 0.3s ease-in-out;
+}
+.banner-section .social-link ul .fa-facebook{
+    background-color: #366ddc;
+    border-radius: 5px;
+}
+.banner-section .social-link ul .fa-facebook:hover{
+    background-color: #366ddc;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.banner-section .social-link ul .fa-behance{
+    background-color: #0056FF;
+    border-radius: 5px;
+}
+.banner-section .social-link ul .fa-behance:hover{
+    background-color: #0056FF;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.banner-section .social-link ul .fa-twitter{
+    background-color: #1DA1F2;
+    border-radius: 5px;
+}
+.banner-section .social-link ul .fa-twitter:hover{
+    background-color: #1DA1F2;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.banner-section .social-link ul .fa-instagram{
+    background-color: #c12564;
+    border-radius: 5px;
+}
+.banner-section .social-link ul .fa-instagram:hover{
+    background-color: #c12564;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.banner-section .social-link ul .fa-linkedin{
+    background-color: #0073B2;
+    border-radius: 5px;
+}
+.banner-section .social-link ul .fa-linkedin:hover{
+    background-color: #0073B2;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.banner-section .social-link ul .fa-youtube{
+    background-color: #cc2b00;
+    border-radius: 5px;
+}
+.banner-section .social-link ul .fa-youtube:hover{
+    background-color: #cc2b00;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+/* About Section */
+.about-section{
+	background-image: url(../images/bg.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	text-align: center;
+	padding: 75px 0;
+}
+.about-section .a-details .a-border{
+	border-bottom: 2px solid #da5e38;
+	width: 200px;
+	display: block;
+	margin: 0 auto;
+}
+.about-section .a-details h2{
+	font-family: 'Baloo', cursive;
+	color: #fff;
+	font-size: 28px;
+	text-transform: uppercase;
+}
+.about-section .a-details h4{
+	color: #ddd;
+    font-size: 22px;
+    margin: 10px 0;
+}
+.about-section .a-details p{
+	color: #a2a2a2;
+    width: 72%;
+    font-size: 15px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Personal Info Section */
+.contact-section{
+	padding: 80px 0;
+	background-color: #ddd;
+}
+.contact-section h2{
+	margin-bottom: 0;
+	text-align: left;
+	text-transform: uppercase;
+	font-size: 30px;
+}
+.contact-section .c-details{
+	text-align: left;
+	font-size: 32px;
+}
+.contact-section .c-details h6{
+	font-size: 16px;
+	color: #7d7d7d;
+}
+.contact-section .c-details .btn-cv{
+	color: #ddd;
+    font-size: 13px;
+    padding: 10px 22px;
+    border-radius: 50px;
+    font-weight: 500;
+    text-transform: uppercase;
+    border: 1px solid #ddd;
+	background: #7d7d7d;
+    transition: 0.3s ease-in-out;
+}
+.contact-section .c-details .btn-more{
+	color: #ddd;
+    font-size: 13px;
+    padding: 10px 22px;
+    border-radius: 50px;
+    font-weight: 500;
+    text-transform: uppercase;
+    border: 1px solid #ddd;
+	background: #7d7d7d;
+    transition: 0.3s ease-in-out;
+}
+.contact-section .c-details button:hover{
+	background: transparent;
+    border: 1px solid #da5e38;
+    color: #da5e38;
+}
+.contact-section .progress {
+    display: -ms-flexbox;
+    display: flex;
+    height: 12px;
+    overflow: hidden;
+    font-size: 0.75rem;
+    background-color: #ffffff;
+    border-radius: 0.25rem;
+}
+.contact-section .c-details .skill h6{
+	font-size: 15px;
+	margin: 1px 0;
+}
+.first-skill{
+	margin-bottom: 15px;
+}
+.second-skill{
+	margin-bottom: 15px;
+}
+.third-skill{
+	margin-bottom: 15px;
+}
+.fourth-skill{
+	margin-bottom: 15px;
+}
+
+/* Services Section */
+.services-section{
+	text-align: center;
+	padding: 75px 0;
+}
+.services-section .s-all h2{
+	font-size: 20px;
+	color: #464545d1;
+	margin: 0;
+}
+.services-section .s-all{
+	background-color: #ddd;
+	margin-top: 20px;
+	border-radius: 10px;
+}
+.services-section .s-all h4{
+	font-size: 20px;
+	color: #464545d1;
+}
+.services-section .s-all p {
+    font-size: 16px;
+    width: 92%;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    color: #565656b0;
+}
+.services-section .fa {
+    font-size: 22px;
+    background-color: #333;
+    color: #ffffff;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 10px;
+    margin: 20px 0 10px 0;
+}
+.services-section .s-one .fa {
+    font-size: 32px;
+}
+
+/* Portfolio Section */
+/*.portfolio-section {
+	padding: 45px 0;
+}
+.portfolio-section .p-header{
+	text-align: center;
+}
+.portfolio-section .container-fluid {
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+.portfolio-section .modal-body img{
+	margin-bottom: 20px;
+}*/
+
+
+/* Portfolio Section */
+.portfolio-section {
+	padding: 45px 0;
+}
+.portfolio-section .container{
+	padding: 0;
+}
+.portfolio-section .p-header{
+	text-align: center;
+	margin-bottom: 0;
+}
+.portfolio-section .p-header h2{
+	margin-bottom: 5px;
+}
+.portfolio-section .p-header p{
+	margin-bottom: 32px;
+}
+.portfolio-section .portfolio-menu ul{
+	list-style: none;
+	text-align: center;
+	margin-bottom: 8px;
+}
+.portfolio-section .portfolio-menu ul li{
+	display: inline-block;
+	padding: 10px 20px;
+	border: 1px solid tomato;
+	cursor: pointer;
+	transition: 0.3s ease-in-out;
+}
+.portfolio-section .portfolio-menu ul li:hover{
+	background-color: tomato;
+	color: #ffffff;
+}
+.portfolio-section .portfolio-menu ul li.active{
+	background-color: tomato;
+	color: #ffffff;
+}
+.portfolio-section .portfolio-item{
+	width: 100%;
+}
+.portfolio-section .portfolio-item .item img{
+	width: 250px;
+    float: left;
+    margin: 13px;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+	background-image: url(../images/bg.jpg);
+	background-position: center;
+	background-size: cover;
+	text-align: center;
+	color: #fff;
+	background-color: #ddd;
+	padding: 0;
+}
+footer .footer-tittle{
+	padding: 40px 0 20px;
+	background-color: #48484870;
+	z-index: 1;
+	transition: 0.5s ease-in-out;
+}
+footer .footer-tittle:hover{
+	background-color: #48484885;
+}
+footer .footer-tittle h6{
+	font-size: 14px;
+}
+footer .footer-tittle a{
+	color: #ddd;
+	text-decoration: underline;
+}
